@@ -1,7 +1,9 @@
 main {
+  // position: relative;
   width: 944px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 50px 48px;
+  grid-template-columns: repeat(auto-fit, 200px);
   margin: 0 auto;
 }
 
@@ -10,7 +12,6 @@ main {
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding: 15px 14px;
-  margin: 0 48px 50px 0;
   width: 200px;
   &:nth-child(4n) {
     margin-right: 0;
@@ -39,7 +40,7 @@ main {
 
 .card__product-code,
 .card__comment,
-.card__price--title {
+.card__price-title {
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
@@ -79,7 +80,7 @@ main {
   margin-bottom: 20px;
 }
 
-.card__price--value {
+.card__price-value {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
