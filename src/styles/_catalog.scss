@@ -1,9 +1,8 @@
-main {
-  // position: relative;
-  width: 944px;
+.container {
+  max-width: 944px;
   display: grid;
   gap: 50px 48px;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 0 auto;
 }
 
@@ -13,9 +12,7 @@ main {
   border-radius: 5px;
   padding: 15px 14px;
   width: 200px;
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+
   &:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
   }
@@ -43,8 +40,7 @@ main {
 .card__price-title {
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
+  line-height: 1rem;
 }
 
 .rate {
@@ -74,21 +70,22 @@ main {
 }
 
 .card__price {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 20px;
 }
 
 .card__price-value {
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19rem;
 }
 
 .card__button {
   width: 170px;
   height: 40px;
+
   background: #00acdc;
   border-radius: 5px;
   font-style: normal;
@@ -97,6 +94,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  
   &:hover {
     background: #fff;
     border: 1px solid #00acdc;
