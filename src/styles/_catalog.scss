@@ -21,7 +21,7 @@
 .card__foto {
   width: 160px;
   height: 134px;
-  margin: 15px 0 41px 5px;
+  margin: 15px 0 42px 5px;
 }
 
 .card__name {
@@ -40,7 +40,8 @@
 .card__price-title {
   font-style: normal;
   font-weight: normal;
-  line-height: 1rem;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 .rate {
@@ -70,31 +71,30 @@
 }
 
 .card__price {
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 .card__price-value {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.19rem;
+  line-height: 19px;
 }
 
 .card__button {
   width: 170px;
   height: 40px;
-
   background: #00acdc;
   border-radius: 5px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
+  border: none;
   text-transform: uppercase;
   color: #fff;
-  
   &:hover {
     background: #fff;
     border: 1px solid #00acdc;
